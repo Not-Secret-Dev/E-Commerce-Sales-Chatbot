@@ -5,6 +5,7 @@ This project is a **front-end implementation** of an interactive chatbot designe
 ---
 
 ## Features
+
 - **Interactive Chat UI**: Users can type queries, send messages, and receive responses.
 - **Responsive Design**: Fully compatible with desktop, tablet, and mobile devices.
 - **Session Management**: Chat history persists using local storage, even after page reloads.
@@ -14,6 +15,7 @@ This project is a **front-end implementation** of an interactive chatbot designe
 ---
 
 ## Tech Stack
+
 - **Framework**: React.js
 - **Styling**: styled-components
 - **State Management**: React Hooks (useState, useEffect)
@@ -21,15 +23,18 @@ This project is a **front-end implementation** of an interactive chatbot designe
 ---
 
 ## Setup Instructions
+
 Follow these steps to run the project locally:
 
 1. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/Not-Secret-Dev/ecommerce-sales-chatbot.git
    cd ecommerce-sales-chatbot
    ```
 
 2. **Install Dependencies**:
+
    ```bash
    npm install
    ```
@@ -43,47 +48,56 @@ Follow these steps to run the project locally:
 ---
 
 ## Project Structure
+
 ```
-Ecommerce-Chatbot/
+Ecommerce-Sales-Chatbot/
 ├── public/                # Static files
-│   └── index.html
+│   └── undo.png
 ├── src/
+│   ├── assets/
 │   ├── components/
-│   │   └── Chatbot.js     # Main chatbot component
-│   ├── styles/
-│   │   └── GlobalStyles.js # Global styled-components
-│   ├── App.js             # App entry point
-│   ├── index.js           # React DOM render
+│   │   ├── Chatbot/
+│   │   │   └── ChatbotComponent.jsx
+│   │   ├── Footer/
+│   │   │   └── FooterComponent.jsx
+│   │   ├── Header/
+│   │   │   └── HeaderComponent.jsx
+│   │   ├── Inputs/
+│   │   │   └── InputComponent.jsx
+│   │   └── Main/
+│   │       └── MainComponent.jsx
+│   ├── App.jsx            # App entry point
+│   ├── index.css          # Global CSS
+│   ├── main.jsx           # React DOM render
 │   └── mockData.js        # Predefined product data
-└── package.json           # Project dependencies
+├── .gitignore             # Git ignore file
+├── eslint.config.js       # ESlint config file
+├── index.html             # Index.html
+├── package.json           # Project dependencies
+├── README.md              # Documentation / README file
+└── vite.config.js         # Vite configuration file
 ```
 
 ---
 
 ## Mock Data
+
 The chatbot replies are powered by hardcoded mock data in `mockData.js`:
 
 ```javascript
 export const mockResponses = {
-  "books under $20": [
-    "Atomic Habits",
-    "The Alchemist",
-    "Harry Potter 1"
-  ],
-  "electronics": [
+  "books under $20": ["Atomic Habits", "The Alchemist", "Harry Potter 1"],
+  electronics: [
     "Wireless Mouse",
     "Mechanical Keyboard",
-    "Bluetooth Headphones"
+    "Bluetooth Headphones",
   ],
-  "textiles": [
-    "Cotton T-shirt",
-    "Silk Scarf",
-    "Denim Jacket"
-  ]
+  textiles: ["Cotton T-shirt", "Silk Scarf", "Denim Jacket"],
 };
 ```
 
 ## Future Improvements
+
 - Connect to a real backend API for dynamic product responses.
 - Add user authentication for personalized recommendations.
 - Implement advanced message features like filters and pagination.
@@ -91,12 +105,15 @@ export const mockResponses = {
 ---
 
 ## License
+
 This project is open-source and available under the [MIT License](./LICENSE).
 
 ---
 
 ## Author
+
 Aayan Mumtaz
+
 - GitHub: [Not-Secret-Dev](https://github.com/Not-Secret-Dev)
 
 Feel free to contribute or fork this project! 🚀
