@@ -58,13 +58,15 @@ Ecommerce-Sales-Chatbot/
 │   ├── components/
 │   │   ├── Chatbot/
 │   │   │   └── ChatbotComponent.jsx
+│   │   ├── ChtaLists/
+│   │   │   └── ChatListComponent.jsx
 │   │   ├── Footer/
 │   │   │   └── FooterComponent.jsx
 │   │   ├── Header/
 │   │   │   └── HeaderComponent.jsx
 │   │   ├── Inputs/
 │   │   │   └── InputComponent.jsx
-│   │   └── Main/
+│   │   └──Main/
 │   │       └── MainComponent.jsx
 │   ├── App.jsx            # App entry point
 │   ├── index.css          # Global CSS
