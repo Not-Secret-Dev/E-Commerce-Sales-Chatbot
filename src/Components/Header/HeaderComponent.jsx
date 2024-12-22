@@ -50,6 +50,12 @@ const NewChatBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.2s all;
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.05;
+  }
 `;
 
 const HeaderComponent = () => {
@@ -57,7 +63,7 @@ const HeaderComponent = () => {
     <Header>
       <div className="left">
         <IdImage>
-          <img src="/public/robot.png" width="18" />
+          <img src="/robot.png" width="18" />
         </IdImage>
         <div className="headings">
           <p>Cart-bot</p>
@@ -66,7 +72,7 @@ const HeaderComponent = () => {
       </div>
       <div className="right">
         <NewChatBtn>
-          <img src="/public/new-message.png" width="18" />
+          <img src="/new-message.png" width="18" />
         </NewChatBtn>
       </div>
     </Header>
