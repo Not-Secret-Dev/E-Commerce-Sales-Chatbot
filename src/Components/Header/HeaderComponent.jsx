@@ -58,7 +58,7 @@ const NewChatBtn = styled.button`
   }
 `;
 
-const HeaderComponent = () => {
+const HeaderComponent = ({ onNewChat }) => {
   return (
     <Header>
       <div className="left">
@@ -71,7 +71,7 @@ const HeaderComponent = () => {
         </div>
       </div>
       <div className="right">
-        <NewChatBtn>
+        <NewChatBtn onClick={onNewChat}>
           <img src="/new-message.png" width="18" />
         </NewChatBtn>
       </div>

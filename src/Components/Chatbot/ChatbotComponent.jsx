@@ -20,13 +20,11 @@ const ChatbotComponent = () => {
   const [messages, setMessages] = useState([]);
 
   const handleResponse = (userMessage) => {
-    // Generate dynamic bot response
     const lowerCasedMessage = userMessage.toLowerCase();
-    const botResponse = mockResponses[lowerCasedMessage]
-      ? `Here are some suggestions: ${mockResponses[lowerCasedMessage].join(
-          ", "
-        )}`
-      : "Sorry, I don't understand. Can you rephrase?";
+    const botResponse =
+      mockResponses[lowerCasedMessage]
+        ? `Here are some suggestions: ${mockResponses[lowerCasedMessage].join(", ")}`
+        : "Sorry, I don't understand. Can you rephrase?";
 
     setMessages((prev) => [
       ...prev,
@@ -35,9 +33,13 @@ const ChatbotComponent = () => {
     ]);
   };
 
+  const clearMessages = () => {
+    setMessages([]);
+  };
+
   return (
     <Chatbot>
-      <HeaderComponent />
+      <HeaderComponent onNewChat={clearMessages} />
       <ChatListComponent messages={messages} />
       <InputComponent onResponse={handleResponse} />
       <FooterComponent />
